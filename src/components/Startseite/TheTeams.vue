@@ -3,7 +3,9 @@
     <div class="container text-center">
       <div class="row text-center row-cols-2">
         <div class="col p-2" v-for="team in teams" :key="team">
-          <img class="rounded-1" :src="team.images" :alt="team.teamName" />
+          <router-link :to="`/teams/${team.teamName}`">
+            <img class="rounded-1" :src="team.images" :alt="team.teamName" />
+          </router-link>
         </div>
       </div>
     </div>
