@@ -132,7 +132,7 @@ const teams = [
     driver: {
       driver1: {
         firstName: "Logan",
-        surName: "Sargent",
+        surName: "Sargeant",
         number: "2",
         points: null,
         position: "",

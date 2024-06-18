@@ -3,6 +3,7 @@
   <div class="moin">
     <img :src="teamMate.images" :alt="teamMate.teamName" />
     <h2>{{ teamMate.teamName }}</h2>
+    <TheDrivers :driver="teamMate" />
   </div>
 </template>
 
@@ -10,6 +11,7 @@
 import { useRoute } from "vue-router";
 import teams from "@/daten/teams";
 import TheNavbar from "@/components/TheNavbar.vue";
+import TheDrivers from "@/components/TheDrivers.vue";
 
 const route = useRoute();
 
