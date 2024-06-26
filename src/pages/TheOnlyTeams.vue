@@ -1,5 +1,5 @@
 <template>
-    <TheNavbar :color="teamMate" />
+    <TheNavbar :color="bgColor" />
     <div class="moin" :style="{backgroundColor: bgColor}">
         <img :src="teamMate.images" :alt="teamMate.teamName" />
         <h2>{{ teamMate.teamName }}</h2>
