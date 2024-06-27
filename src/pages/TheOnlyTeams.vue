@@ -2,7 +2,7 @@
     <TheNavbar :color="bgColor" />
     <div class="moin" :style="{backgroundColor: bgColor}">
         <img :src="teamMate.images" :alt="teamMate.teamName" />
-        <h2>{{ teamMate.teamName }}</h2>
+        <h2 class="text-center">{{ teamMate.teamName }}</h2>
         <div class="container px-5">
             <div class="row row-cols-1 row-cols-lg-2">
                 <TheDrivers class="col" :driver="teamMate" />
