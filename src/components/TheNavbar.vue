@@ -1,7 +1,7 @@
 <template>
     <nav
         :style="{backgroundColor: bgColor}"
-        class="navbar navbar-expand-lg navbar-color"
+        class="navbar navbar-expand-lg navbar-color position"
     >
         <div class="container-fluid">
             <div class="collapse navbar-collapse">
@@ -44,5 +44,9 @@ const teamse = teams;
 }
 .navbar-color {
     background-color: rgb(106, 97, 97);
+}
+.position {
+    position: sticky;
+    top: 0;
 }
 </style>

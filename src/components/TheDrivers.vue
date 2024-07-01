@@ -3,6 +3,7 @@
         :to="`/driver/${fahrer.surName}`"
         v-for="fahrer in theDriver"
         :key="fahrer"
+        class="contein"
     >
         <div
             class="img"
@@ -33,11 +34,11 @@ const imageLink =
 
 <style scoped>
 .img {
-    width: 400px;
+    width: 100%;
     height: 400px;
     border-radius: 5%;
-    background-size: contain;
     position: relative;
+    background-size: cover;
 }
 .ibm-plex-mono-semibold-italic {
     font-family: 'IBM Plex Mono', monospace;
@@ -51,10 +52,13 @@ const imageLink =
     text-shadow: 3px 0 0 gold;
 }
 .driver-name {
-    position: absolute;
-    bottom: 15px;
+    position: relative;
+    bottom: -70%;
     color: gold;
-    left: 20%;
+    text-align: center;
     text-shadow: 3px 0 0 crimson;
+}
+.contein {
+    text-decoration: none;
 }
 </style>

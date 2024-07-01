@@ -8,7 +8,7 @@
                     'url(' + imageLink + newDriver.surName + ')',
             }"
         >
-            <p>{{ newDriver.firstName + ' ' + newDriver.surName }}</p>
+            <h2>{{ newDriver.firstName + ' ' + newDriver.surName }}</h2>
             <p>Nummer: {{ newDriver.number }}</p>
         </div>
     </div>
